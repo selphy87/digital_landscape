@@ -57,11 +57,11 @@ $("#startGame").on("click", function(e){
     $("input[type=radio]").closest("div").removeClass('is-invalid')
     $("select").removeClass('is-invalid')
     env = ($("input[type=radio]:checked").val()).toLowerCase();
-    console.log(env)
+   // console.log(env)
     scope = ($("select").val()).toLowerCase();
-    console.log(scope)
+    //console.log(scope)
     code = ($("input[type=text]").val()).toLowerCase();
-    console.log(code)
+    //console.log(code)
     //constructLink()
     if (env && scope){
         $("#form_layer").addClass("hidden");
