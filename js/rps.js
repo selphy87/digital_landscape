@@ -232,7 +232,7 @@ var constructLink = function(){
       return
     }
     var link = arr[n]
-    $("#win_div .addherelink").html("Codice trovato <a target='_blank' href='"+link+"'>File trovato!</a>")
+    $("#win_div .addherelink").html("Code found! <a target='_blank' href='"+link+"'>1 file matches!</a>")
 }
 
 var checkCode = function(){
