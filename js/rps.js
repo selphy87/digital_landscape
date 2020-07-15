@@ -231,8 +231,8 @@ var constructLink = function(){
       $("#win_div .addherelink").html("Error, code not found! <a class='reload' href='#'>Retry!</a>")
       return
     }
-    var link = arr[n]
-    //var link = 'https://drive.google.com/file/d/1xFybwtZd0fcK8elfSzMT9ct8iGQxTGBU/view?usp=sharing'
+ //   var link = arr[n]
+    var link = 'https://drive.google.com/file/d/1xFybwtZd0fcK8elfSzMT9ct8iGQxTGBU/view?usp=sharing'
     $("#win_div .addherelink").html("Code found! <a target='_blank' href='"+link+"'>1 file matches!</a>")
 
   }
