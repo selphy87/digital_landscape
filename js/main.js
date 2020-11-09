@@ -60,11 +60,31 @@ $("#startGame").on("click", function(e){
     $(".error-div").addClass("hidden")
     $("input[type=radio]").closest("div").removeClass('is-invalid')
     $("select").removeClass('is-invalid')
-    env = ($("input[type=radio]:checked").val()).toLowerCase();
-   // console.log(env)
-    scope = ($("select").val()).toLowerCase();
+    if($("input[type=radio]:checked").val()){
+        env = ($("input[type=radio]:checked").val()).toLowerCase();
+    }
+    else {
+        $("input[type=radio]").closest("div").addClass('is-invalid')
+        $(".error-div").removeClass("hidden")
+        return;
+    }
+    if($("select").val()){
+        scope = ($("select").val()).toLowerCase();
+    }
+    else {
+        $("select").addClass('is-invalid')
+        $(".error-div").removeClass("hidden")
+        return;
+    }
+    if($("input[type=text]").val()){
+        code = ($("input[type=text]").val()).toLowerCase();
+    }
+    else {
+        code = false;
+    }
+    
+    // console.log(env)
     //console.log(scope)
-    code = ($("input[type=text]").val()).toLowerCase();
     //console.log(code)
     //constructLink()
     if (env && scope){
